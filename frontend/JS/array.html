@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数组 | CC3688 blog</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.d6be14a1.css" as="style"><link rel="preload" href="/assets/js/app.0461a159.js" as="script"><link rel="preload" href="/assets/js/2.2a66a28f.js" as="script"><link rel="preload" href="/assets/js/15.1e2c0965.js" as="script"><link rel="prefetch" href="/assets/js/10.d963a8fc.js"><link rel="prefetch" href="/assets/js/11.f2b92ef5.js"><link rel="prefetch" href="/assets/js/12.8400469f.js"><link rel="prefetch" href="/assets/js/13.59c55443.js"><link rel="prefetch" href="/assets/js/14.4710d7d6.js"><link rel="prefetch" href="/assets/js/16.77ac6231.js"><link rel="prefetch" href="/assets/js/17.3570a305.js"><link rel="prefetch" href="/assets/js/18.34dc2152.js"><link rel="prefetch" href="/assets/js/19.eff434b2.js"><link rel="prefetch" href="/assets/js/20.076c4be4.js"><link rel="prefetch" href="/assets/js/21.ff1e24e0.js"><link rel="prefetch" href="/assets/js/22.4f84218d.js"><link rel="prefetch" href="/assets/js/23.8cde156a.js"><link rel="prefetch" href="/assets/js/24.115da68d.js"><link rel="prefetch" href="/assets/js/25.9ed8c285.js"><link rel="prefetch" href="/assets/js/26.df30b69e.js"><link rel="prefetch" href="/assets/js/27.929a9110.js"><link rel="prefetch" href="/assets/js/28.71b1b979.js"><link rel="prefetch" href="/assets/js/3.5d0a924a.js"><link rel="prefetch" href="/assets/js/4.7ea2c4cb.js"><link rel="prefetch" href="/assets/js/5.add583e6.js"><link rel="prefetch" href="/assets/js/6.8409eb02.js"><link rel="prefetch" href="/assets/js/7.e96dae62.js"><link rel="prefetch" href="/assets/js/8.cb4d0cef.js"><link rel="prefetch" href="/assets/js/9.6daee067.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d6be14a1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CC3688 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link router-link-active">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/frontend/JS/" class="sidebar-link">JS</a></li><li><a href="/frontend/JS/variable.html" class="sidebar-link">变量/赋值</a></li><li><a href="/frontend/JS/function.html" class="sidebar-link">函数</a></li><li><a href="/frontend/JS/array.html" class="active sidebar-link">数组</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/JS/array.html#map" class="sidebar-link">map</a></li><li class="sidebar-sub-header"><a href="/frontend/JS/array.html#reduce" class="sidebar-link">reduce</a></li><li class="sidebar-sub-header"><a href="/frontend/JS/array.html#filter" class="sidebar-link">filter</a></li><li class="sidebar-sub-header"><a href="/frontend/JS/array.html#foreach-遍历" class="sidebar-link">forEach 遍历</a></li><li class="sidebar-sub-header"><a href="/frontend/JS/array.html#array-from" class="sidebar-link">Array.from</a></li></ul></li><li><a href="/frontend/JS/设计模式.html" class="sidebar-link">设计模式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数组"><a href="#数组" class="header-anchor">#</a> 数组</h1> <p>数组是极其常用的</p> <h2 id="map"><a href="#map" class="header-anchor">#</a> map</h2> <p><strong>映射: 一个对一个</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const arr1 = [18, 67, 98, 25, 17, 96] 
+const arr2 = arr1.map(i=&gt; i &gt;= 60)
+
+// [ 18, 67, 98, 25, 17, 96 ]
+// [ false, true, true, false, false, true ]
+// 映射, 一个对一个 弄一个新的出来,  原数组不变, 返回一个新的数组
+</code></pre></div><h2 id="reduce"><a href="#reduce" class="header-anchor">#</a> reduce</h2> <p><strong>汇总：一堆 汇总(总之是经过一系列操作最后得到) 一个</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const arr = [18, 67, 98, 25, 17, 96]
+const res = arr1reduce((tmp, item, index)=&gt; {
+   
+    if(index === arr.length - 1) {
+       return (tmp + item )/arr1.length
+    } else {
+
+        return tmp + item
+    }
+})
+// 汇总后, 返回一个结果
+// 原数组不变
+// 第一次进入时 tmp 是 arr[0]   item 是 arr[1]  index 是索引 1 (和item索引一致)
+// 注意要 return 一个东西, 这个东西 就是 下一次的 tmp
+</code></pre></div><h2 id="filter"><a href="#filter" class="header-anchor">#</a> filter</h2> <div class="language- extra-class"><pre class="language-text"><code>const arr = [18, 67, 98, 25, 17, 96] 
+const res = arr.filter((value,key,arr)=&gt; {
+    
+    return v &gt; 60
+})
+
+// 回调函数有三个参数, 数组元素, 该元素的索引, 该数组   一般就用一个参数(第一个)
+// 它必须 返回 布尔值, 当为真时, 该元素被保存到res中, 为假不保存
+// 返回一个新的数组, 不改变原数
+</code></pre></div><h2 id="foreach-遍历"><a href="#foreach-遍历" class="header-anchor">#</a> forEach 遍历</h2> <div class="language- extra-class"><pre class="language-text"><code>const arr = [18, 67, 98, 25, 17, 96] 
+
+const res = arr.forEach((v,k,a)=&gt; {
+    console.log(v, k, a)
+    
+})
+
+// 回调函数有三个参数, 数组元素, 该元素的索引, 该数组   一般就用一个参数(第一个)
+// 内部无法使用break continue  即 遍历 无法终止 或 跳过
+// 没有返回值 res 为 undefined   arr不变
+</code></pre></div><h2 id="array-from"><a href="#array-from" class="header-anchor">#</a> Array.from</h2> <p><strong>把类数据, 转变为真数组,才可以使用数据的方法</strong></p> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/JS/function.html" class="prev">
+        函数
+      </a></span> <span class="next"><a href="/frontend/JS/设计模式.html">
+        设计模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0461a159.js" defer></script><script src="/assets/js/2.2a66a28f.js" defer></script><script src="/assets/js/15.1e2c0965.js" defer></script>
+  </body>
+</html>

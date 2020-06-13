@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack | CC3688 blog</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.d6be14a1.css" as="style"><link rel="preload" href="/assets/js/app.0461a159.js" as="script"><link rel="preload" href="/assets/js/2.2a66a28f.js" as="script"><link rel="preload" href="/assets/js/24.115da68d.js" as="script"><link rel="prefetch" href="/assets/js/10.d963a8fc.js"><link rel="prefetch" href="/assets/js/11.f2b92ef5.js"><link rel="prefetch" href="/assets/js/12.8400469f.js"><link rel="prefetch" href="/assets/js/13.59c55443.js"><link rel="prefetch" href="/assets/js/14.4710d7d6.js"><link rel="prefetch" href="/assets/js/15.1e2c0965.js"><link rel="prefetch" href="/assets/js/16.77ac6231.js"><link rel="prefetch" href="/assets/js/17.3570a305.js"><link rel="prefetch" href="/assets/js/18.34dc2152.js"><link rel="prefetch" href="/assets/js/19.eff434b2.js"><link rel="prefetch" href="/assets/js/20.076c4be4.js"><link rel="prefetch" href="/assets/js/21.ff1e24e0.js"><link rel="prefetch" href="/assets/js/22.4f84218d.js"><link rel="prefetch" href="/assets/js/23.8cde156a.js"><link rel="prefetch" href="/assets/js/25.9ed8c285.js"><link rel="prefetch" href="/assets/js/26.df30b69e.js"><link rel="prefetch" href="/assets/js/27.929a9110.js"><link rel="prefetch" href="/assets/js/28.71b1b979.js"><link rel="prefetch" href="/assets/js/3.5d0a924a.js"><link rel="prefetch" href="/assets/js/4.7ea2c4cb.js"><link rel="prefetch" href="/assets/js/5.add583e6.js"><link rel="prefetch" href="/assets/js/6.8409eb02.js"><link rel="prefetch" href="/assets/js/7.e96dae62.js"><link rel="prefetch" href="/assets/js/8.cb4d0cef.js"><link rel="prefetch" href="/assets/js/9.6daee067.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d6be14a1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CC3688 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link router-link-active">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link router-link-active">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/frontend/tools/" class="sidebar-link">tools</a></li><li><a href="/frontend/tools/webpack.html" class="active sidebar-link">webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#js模块化" class="sidebar-link">JS模块化</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#css-模块化" class="sidebar-link">CSS 模块化</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#核心概念" class="sidebar-link">核心概念</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#编译-es6-7" class="sidebar-link">编译 ES6/7</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#编译-typescript" class="sidebar-link">编译 typescript</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#提取公共代码" class="sidebar-link">提取公共代码</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#懒加载" class="sidebar-link">懒加载</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/webpack.html#处理css" class="sidebar-link">处理css</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webpack"><a href="#webpack" class="header-anchor">#</a> webpack</h1> <h2 id="js模块化"><a href="#js模块化" class="header-anchor">#</a> JS模块化</h2> <h3 id="命名空间"><a href="#命名空间" class="header-anchor">#</a> 命名空间</h3> <p>库名.类别名.方法名</p> <div class="language- extra-class"><pre class="language-text"><code>const NameSpace = {}   // 一个命名空间
+
+//如果被定义就用原来的,如果没有就用 {} 避免被重复覆盖
+NameSpace.type = NameSpace.type || {}      // type 命名空间
+
+NameSpace.type.method = function() {     // type 命名空间的 方法
+
+}
+</code></pre></div><p>不足: 名字长, 使用需要 点点点   (object . 语法)</p> <h3 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> commonjs</h3> <p>一个文件为一个模块</p> <p>通过 module.exports 暴露模块接口</p> <p>通过 require 引入模块</p> <p>同步执行</p> <h3 id="amd-cmd-umd"><a href="#amd-cmd-umd" class="header-anchor">#</a> AMD/CMD/UMD</h3> <h4 id="amd"><a href="#amd" class="header-anchor">#</a> AMD</h4> <p>Async Module Definition</p> <p>使用 define 定义模块</p> <p>使用 require 加载模块</p> <p>RequireJS (代表库)</p> <p>依赖前置, 提前执行</p> <div class="language- extra-class"><pre class="language-text"><code>define(
+  &quot;alpha&quot;, //模块名 可省略
+  [&quot;require&quot;, &quot;exports&quot;, &quot;beta&quot;], //依赖
+  function(require, exports, beta) {   
+    //参数声明的模块,有没有用到,都会提前执行, 参数的模块与上面依赖声明的模块一一对应
+    exports.verb = function(){  // 模块输出
+      return beta.verb()
+    }
+  }
+)
+</code></pre></div><h4 id="cmd"><a href="#cmd" class="header-anchor">#</a> CMD</h4> <p>common module definition</p> <p>一个文件为一个模块</p> <p>使用 define 来定义一个模块</p> <p>使用 require 来加载一个模块</p> <p>SeaJS(代表库)</p> <p>特点, 尽可能懒执行, 这也是 和 AMD的最大不同, AMD把所有的依赖前置了,先执行了依赖的代码.</p> <div class="language- extra-class"><pre class="language-text"><code>// 所有模块 都通过 define 来定义
+define(function(require, exports, module){
+  // 通过 require 引入依赖
+  var $ = require('jquery');
+  var Spinnig = require('./spinnig);
+
+  // 通过 exports 对外提供接口
+  exports.doSometing = ...
+
+  // 或者通过 module.exports 提供整个接口
+  module.exports = ...
+
+  //exports =  ...  不能这样做, 会覆盖掉这个参数
+});
+
+</code></pre></div><h4 id="umd"><a href="#umd" class="header-anchor">#</a> UMD</h4> <p>universal module definition</p> <p>通用解决方案</p> <p>三个步奏:</p> <p>1 判断是否支持 AMD</p> <p>2 判断是否支持 commonJS</p> <p>3 如果都没有  使用全局变量</p> <div class="language- extra-class"><pre class="language-text"><code>(function(root, factory){
+
+  if(type define === 'function' &amp;&amp; define.amd) {
+
+    define([], factory);
+
+  } else if(typeof exports === 'object') {
+
+    module.exports = factory()
+
+  } else {
+
+    root.returnExprots = factory()
+
+  }
+})(this, function(){
+
+  return {}
+})
+
+
+</code></pre></div><h3 id="es6-module-esm"><a href="#es6-module-esm" class="header-anchor">#</a> ES6 module   / ESM</h3> <p>EcmaScript Module
+一个文件 一个模块
+export 暴露
+import 引用</p> <div class="language- extra-class"><pre class="language-text"><code>// 引入
+import theDefault, { named1, named2 } from 'src/mylib'
+import theDefault from 'src/mylib'
+import { named1, named2 } from 'src/mylib'
+
+// 引入并重命名
+import { named1 as myNamed1, named2 } from 'src/mylib'
+
+// 引入所有属性 到一个 object  下方可通赤 mylib.xx 使用
+import * as mylib from 'src/mylib
+
+// 只加载模块, 不引入,   一般用来引入 css 文件
+import 'src/mylib'
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>export var myVar1 = ''
+export let myVar2 = ''
+export const MY_CONST = ''
+
+export function myFunc() {}
+export function* myGeneratorFunc() {}
+export class MyClass {}
+
+
+// export default 只能有一个, 下面展示是示例可以有这样的导出而已
+export default 134
+
+export default function(x) {
+  return x
+}
+
+export defualt x =&gt; x
+
+exportd default class {
+  constructor(x, y) {
+    this.x = x
+    this.y = y
+  }
+}
+
+// 也可以先定义 声明  export 出去
+const MY_CONST = ''
+function myFunc() {}
+// 下面只是展示, 只能 导出  一个 {}   覆盖
+export { MY_CONST, myFunc }
+export { MY_CONST as THE_CONST, myFunc as tearFunc }
+// 引入其它模块并在此模块导出
+export * from 'src/other_module
+export { foo, bar } from 'src/other_module
+export { foo as myFoo, bar } from 'src/other_module'
+</code></pre></div><h2 id="css-模块化"><a href="#css-模块化" class="header-anchor">#</a> CSS 模块化</h2> <p>css模块化 也就是css规范</p> <p>BEM 是众多规范的一种</p> <p><code>块（block）、元素（element）、修饰符（modifier），由 Yandex 团队提出的一种前端 CSS 命名方法论。</code></p> <p>- 中划线 ：仅作为连字符使用，表示某个块或者某个子元素的多单词之间的连接记号。</p> <p>__ 双下划线：双下划线用来连接块和块的子元素</p> <p>_ 单下划线：单下划线用来描述一个块或者块的子元素的一种状态</p> <p>命名约定的模式是：</p> <div class="language- extra-class"><pre class="language-text"><code>.block {}
+
+.block__element {}
+
+.block--modifier {}
+</code></pre></div><p>每一个块(block)名应该有一个命名空间（前缀）</p> <ul><li>block 代表了更高级别的抽象或组件。</li> <li>block__element 代表 .block 的后代，用于形成一个完整的 .block 的整体。</li> <li>block--modifier 代表 .block 的不同状态或不同版本。使用两个连字符和下划线而不是一个，是为了让你自己的块可以用单个连字符来界定</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;article&quot;&gt;
+    &lt;div class=&quot;article__body&quot;&gt;
+        &lt;div class=&quot;tag&quot;&gt;&lt;/div&gt;
+        &lt;button class=&quot;article__button--primary&quot;&gt;&lt;/button&gt;
+        &lt;button class=&quot;article__button--success&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre></div><p>什么时候使用BEM ?</p> <ul><li>使用 BEM 的诀窍是，你要知道什么时候哪些东西是应该写成 BEM 格式的。</li> <li>并不是每个地方都应该使用 BEM 命名方式。当需要明确关联性的模块关系时，应当使用 BEM 格式。</li> <li>比如只是一条公共的单独的样式，就没有使用 BEM 格式的意义</li></ul> <p>BEM的不足就是会让名字长, 在less可以这样, 书写还是蛮方便的</p> <div class="language- extra-class"><pre class="language-text"><code>.article {
+    max-width: 1200px;
+    &amp;__body {
+        padding: 20px;
+    }
+    &amp;__button {
+        padding: 5px 8px;
+        &amp;--primary {background: blue;}
+        &amp;--success {background: green;}
+    }
+}
+
+</code></pre></div><h2 id="核心概念"><a href="#核心概念" class="header-anchor">#</a> 核心概念</h2> <h3 id="entry"><a href="#entry" class="header-anchor">#</a> Entry</h3> <p>代码的入口,  也是打包的入口,  从入口进入,找依赖及找依赖的依赖. entry可以是一个入口,也可以是多个.</p> <div class="language- extra-class"><pre class="language-text"><code>// 三种入口的写法, 第三种比较好, 可以为打包后的文件起名字, key可以为chunk值
+// 值为 一个可以找的文件的地址就可以
+module.exports = {
+  entry: 'index.js'
+  entry: ['index.js', 'vendor.js']
+  entry: {
+    index: 'index.js'
+  }
+}
+</code></pre></div><h3 id="output"><a href="#output" class="header-anchor">#</a> Output</h3> <p>打包生成的文件 bundle</p> <p>可以是一个或多个</p> <p>可以自定义规则</p> <p>配置要和entry对应</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  entry: 'index.js',
+  output: {
+    filename: 'index.mini.js'
+  }
+  entry: {
+    index: 'index.js',
+    vendor: 'vendor.js'
+  },
+  output: {    // name就是entry的key值
+    filename: '[name].min.[hash:5].js'
+  }
+}
+</code></pre></div><h3 id="loaders"><a href="#loaders" class="header-anchor">#</a> Loaders</h3> <p>处理文件</p> <p>转化为模块</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,   // 正则
+        use: 'css-loader' // 使用的loader
+      }
+    ]
+  }
+}
+</code></pre></div><h3 id="plugins"><a href="#plugins" class="header-anchor">#</a> Plugins</h3> <p>参与打包整个过程</p> <p>打包优化和压缩</p> <p>配置编译时的变量</p> <p>极其灵活</p> <p>常用的Plugins:</p> <ul><li>优化相关</li></ul> <blockquote><p>CommonsChunkPlugin</p> <p>UglifyjsWebpackPlugin</p></blockquote> <ul><li>功能相关</li></ul> <blockquote><p>ExtractTextWebpackPlugin</p> <p>HtmlWebpackPlugin</p> <p>HotModuleReplacementPlugin</p> <p>CopyWebpackPlugin</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>const webpack = require('webpack')
+
+module.exports = {
+  // 是一个数组, 可以使用多个
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin()
+  ]
+}
+
+</code></pre></div><p><strong>常见名词</strong>
+Chunk 代码块
+Bundle 一束一捆, 被打包后的代码
+Module 模块,通过loader处理后就是模块</p> <h2 id="编译-es6-7"><a href="#编译-es6-7" class="header-anchor">#</a> 编译 ES6/7</h2> <p>babel-loader (babel.io 官网   https://www.babeljs.cn/ 中文官网)</p> <p><strong>安装</strong></p> <p><code>npm install --save-dev babel-loader @babel/core</code></p> <p><strong>babel presets</strong></p> <p>babel presets 是规范的总结, 有:
+es2015<br>
+es2016<br>
+es2017<br>
+env(常用)<br>
+babel-preset-react
+babel-preset-state 0-3 (未发布的总结)</p> <p><strong>安装</strong></p> <p><code>npm install --save-dev @babel/preset-env</code></p> <p><strong>babel polyfill</strong></p> <p>全局垫片 (使各种浏览器环境一致/api一致)
+会污染全局</p> <p>为应用准备的(就是我们自己开发的应用, 不是为了开发框架,如vue 准备的)</p> <p><code>npm install --save babel-polyfill</code></p> <div class="language- extra-class"><pre class="language-text"><code>//使用
+import 'babel-polyfill'
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>// 在webpack.config.js 里的 module 里配置
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        //use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              [
+                '@babel/preset-env', 
+                {
+                  targets: {
+                    browsers: ['&gt;1%', 'last 2 versions']
+                  }
+                }
+              ]
+            ]
+          }
+        },
+        exclude: '/node_modules/'
+      }
+    ]
+  }
+</code></pre></div><p><strong>babel runtime transform</strong></p> <p>局部垫片</p> <p>为开发框架准备</p> <p>不污染全局</p> <p><code>npm install --save-dev @babel/plugin-transform-runtime</code></p> <p><code>npm install --save @babel/runtime</code></p> <div class="language- extra-class"><pre class="language-text"><code>// 使用  配置   要 创建 一个babel的配置文件   .babelrc
+{
+  &quot;presets&quot;: [
+    [
+      &quot;@babel/preset-env&quot;, 
+      {
+        &quot;targets&quot;: {
+          &quot;browsers&quot;: [&quot;&gt;1%&quot;, &quot;last 2 versions&quot;]
+        }
+      }
+    ]
+  ],
+  &quot;plugins&quot;: [&quot;@babel/transform-runtime&quot;]
+}
+</code></pre></div><h2 id="编译-typescript"><a href="#编译-typescript" class="header-anchor">#</a> 编译 typescript</h2> <p>typscript 是微软出品的 Javascript的超集</p> <p><strong>安装</strong></p> <p><code>npm i -D typescript ts-loader</code></p> <p><code>npm i -D typescript awesome-typescript-loader //第三方法的</code></p> <p><strong>配置</strong> 文件</p> <p>tsconfig.json
+'''
+{
+&quot;compilerOptions&quot;: {
+&quot;module&quot;: &quot;commonjs&quot;,
+&quot;target&quot;: &quot;es5&quot;,
+&quot;allowJs&quot;: true,
+&quot;typeRoots&quot;: [
+&quot;./node_modules/@types&quot;,
+&quot;./typings/modules&quot;
+]
+},
+&quot;include&quot;: [
+&quot;./src/*&quot;
+],
+&quot;exclude&quot;: [
+&quot;./node_modules&quot;
+]
+}
+'''</p> <p>webpack.config.js</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  mode: 'development',
+  entry: {
+    'app': './src/app.ts'
+  },
+  output: {
+    filename: '[name].bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: {
+          loader: 'ts-loader'
+        }
+      }
+    ]
+  }
+}
+</code></pre></div><p><strong>声明文件</strong></p> <p><code>npm i -S @types/lodash</code></p> <p><code>npm i -S install @types/vue</code>
+这种需要自己去 安装 需要的 类库</p> <p><strong>Typings</strong></p> <p>全局安装, 可以多一个typings</p> <p><code>npm i -g typings</code></p> <p><code>typings install lodash</code></p> <h2 id="提取公共代码"><a href="#提取公共代码" class="header-anchor">#</a> 提取公共代码</h2> <p>CommonsChunkPlugin 提取公共代码块 (v3可以用, v4 已经废弃)</p> <div class="language- extra-class"><pre class="language-text"><code>const webpack = require('webpack')
+const path = require('path')
+
+module.exports = {
+  entry: {
+    'pageA': './src/pageA',
+    'pageB': './src/pageB',
+    'vendor': ['lodash']      // 多入口,才有效果,  单一入口用户代码分割  懒加载
+  },
+
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].chunk.js'
+  },
+
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'common',
+      minChunks: 2,
+      chunks: ['pageA', 'pageB']
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: ['vendor', 'manifest'],
+      minChunks: Infinity
+    }),
+
+  ]
+}
+</code></pre></div><h2 id="懒加载"><a href="#懒加载" class="header-anchor">#</a> 懒加载</h2> <p>import(</p> <p>/* webpackChunkName: async-chunk-name */</p> <p>/* webpackMode: lazy */</p> <p>modulename
+)</p> <p>通过注释的方式, 来告诉webpack 一些额外的信息</p> <h2 id="处理css"><a href="#处理css" class="header-anchor">#</a> 处理css</h2> <p>引入</p> <p>css modules</p> <p>配置 less/sass</p> <p>提取 css 代码</p> <p>style-loader     //创建样式到你的 html 标签中</p> <p>css-loader       // 让你可以 import css 文件 到你的js中</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/tools/" class="prev router-link-active">
+        tools
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0461a159.js" defer></script><script src="/assets/js/2.2a66a28f.js" defer></script><script src="/assets/js/24.115da68d.js" defer></script>
+  </body>
+</html>
