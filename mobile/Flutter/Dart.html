@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dart 入门 | CC3688 blog</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.1b5c6595.css" as="style"><link rel="preload" href="/assets/js/app.a761fdad.js" as="script"><link rel="preload" href="/assets/js/2.f625eefe.js" as="script"><link rel="preload" href="/assets/js/42.121cbf6d.js" as="script"><link rel="prefetch" href="/assets/js/10.9276f3bc.js"><link rel="prefetch" href="/assets/js/11.b682676a.js"><link rel="prefetch" href="/assets/js/12.e93f1a58.js"><link rel="prefetch" href="/assets/js/13.c670705b.js"><link rel="prefetch" href="/assets/js/14.3afc9644.js"><link rel="prefetch" href="/assets/js/15.ce0ec2af.js"><link rel="prefetch" href="/assets/js/16.0c8fed25.js"><link rel="prefetch" href="/assets/js/17.70f271e7.js"><link rel="prefetch" href="/assets/js/18.325e0978.js"><link rel="prefetch" href="/assets/js/19.57d5157d.js"><link rel="prefetch" href="/assets/js/20.c4a7a36b.js"><link rel="prefetch" href="/assets/js/21.d185011b.js"><link rel="prefetch" href="/assets/js/22.b6cd295c.js"><link rel="prefetch" href="/assets/js/23.077bd992.js"><link rel="prefetch" href="/assets/js/24.241b12cb.js"><link rel="prefetch" href="/assets/js/25.f8d57d84.js"><link rel="prefetch" href="/assets/js/26.2ca22227.js"><link rel="prefetch" href="/assets/js/27.e11e823c.js"><link rel="prefetch" href="/assets/js/28.50281ac8.js"><link rel="prefetch" href="/assets/js/29.1fce1f13.js"><link rel="prefetch" href="/assets/js/3.48bf621d.js"><link rel="prefetch" href="/assets/js/30.9c96825f.js"><link rel="prefetch" href="/assets/js/31.12c3998e.js"><link rel="prefetch" href="/assets/js/32.fb94fa3c.js"><link rel="prefetch" href="/assets/js/33.bd9b462f.js"><link rel="prefetch" href="/assets/js/34.58ac7858.js"><link rel="prefetch" href="/assets/js/35.b55b61d6.js"><link rel="prefetch" href="/assets/js/36.245f58ef.js"><link rel="prefetch" href="/assets/js/37.d025f029.js"><link rel="prefetch" href="/assets/js/38.d197d8d0.js"><link rel="prefetch" href="/assets/js/39.b7e1ce60.js"><link rel="prefetch" href="/assets/js/4.97b1d945.js"><link rel="prefetch" href="/assets/js/40.0c1a84a9.js"><link rel="prefetch" href="/assets/js/41.d4afa780.js"><link rel="prefetch" href="/assets/js/43.0479770a.js"><link rel="prefetch" href="/assets/js/44.d7c52248.js"><link rel="prefetch" href="/assets/js/45.d1b8ece5.js"><link rel="prefetch" href="/assets/js/46.0da90371.js"><link rel="prefetch" href="/assets/js/47.3ba8bcd7.js"><link rel="prefetch" href="/assets/js/48.b2dc0303.js"><link rel="prefetch" href="/assets/js/49.61cc678b.js"><link rel="prefetch" href="/assets/js/5.63cb3433.js"><link rel="prefetch" href="/assets/js/50.712e3a95.js"><link rel="prefetch" href="/assets/js/51.3e671530.js"><link rel="prefetch" href="/assets/js/6.345a20a1.js"><link rel="prefetch" href="/assets/js/7.57211556.js"><link rel="prefetch" href="/assets/js/8.e8f7270a.js"><link rel="prefetch" href="/assets/js/9.68af55ab.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1b5c6595.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CC3688 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/framework/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Adonis/" class="nav-link">
+  Adonis
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Django/" class="nav-link">
+  Django
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动" class="dropdown-title"><span class="title">移动</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/RN/" class="nav-link">
+  RN
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/Flutter/" class="nav-link router-link-active">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/jingguan/" class="nav-link">
+  经管
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/framework/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Adonis/" class="nav-link">
+  Adonis
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Django/" class="nav-link">
+  Django
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动" class="dropdown-title"><span class="title">移动</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/RN/" class="nav-link">
+  RN
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/Flutter/" class="nav-link router-link-active">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/jingguan/" class="nav-link">
+  经管
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/mobile/Flutter/" class="sidebar-link">Flutter</a></li><li><a href="/mobile/Flutter/Dart.html" class="active sidebar-link">Dart 入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#dart-hello-world" class="sidebar-link">Dart Hello World</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#注释" class="sidebar-link">注释</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#变量与数据类型" class="sidebar-link">变量与数据类型</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#流程控制语句" class="sidebar-link">流程控制语句</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#迭代" class="sidebar-link">迭代</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#函数-方法" class="sidebar-link">函数 / 方法</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#错误处理" class="sidebar-link">错误处理</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#面向对象" class="sidebar-link">面向对象</a></li><li class="sidebar-sub-header"><a href="/mobile/Flutter/Dart.html#进一步了解面向对象" class="sidebar-link">进一步了解面向对象</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="dart-入门"><a href="#dart-入门" class="header-anchor">#</a> Dart 入门</h1> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <p>不同的开发平台需要下载不同的SDK</p> <p><a href="https://www.dartcn.com/" target="_blank" rel="noopener noreferrer">Dart编程语言<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>windows 平台的 下载后,解压, 然后放到一个目录(名称不要有空格), 把 bin目录,添加到系统环境变量里.</p> <p>VScode 安装 Dart, Flutter 插件, 编程过程体验更佳.</p> <h2 id="dart-hello-world"><a href="#dart-hello-world" class="header-anchor">#</a> Dart Hello World</h2> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 这里是文档注释
+ */
+void main() {
+
+  // 单行注释
+  print(&quot;Hello world&quot;);   // 这里后面的都是注释
+
+  print('This is my first application');
+
+  print(4);
+
+  print(1/4);
+
+  print(false);
+}
+}
+</code></pre></div><ul><li>main 是入口函数, 主函数, 即这个文件(模块)的执行从这个函数开始</li> <li>main 是函数名,  函数名前的 占位符 是返回值的类型, void 表示没有返回值</li> <li>print() 函数, 从终端输出字符</li></ul> <h2 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h2> <ul><li>// 是单行注释,  它之后的内容都是注释的内容</li> <li>/* */  是多行注释  它之间的内容都是注释的内容</li></ul> <h2 id="变量与数据类型"><a href="#变量与数据类型" class="header-anchor">#</a> 变量与数据类型</h2> <h3 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h3> <ul><li>Numbers
+<ul><li>int</li> <li>double</li></ul></li> <li>Strings</li> <li>Booleans</li> <li>Lists (类似Arrays)</li> <li>Maps</li> <li>Runes</li> <li>Symbols</li></ul> <p><strong>一切数据类型都是对象，默认值都是null,即声明时没赋值,则值为null</strong></p> <h3 id="声明变量"><a href="#声明变量" class="header-anchor">#</a> 声明变量</h3> <div class="language- extra-class"><pre class="language-text"><code>//数据类型  变量名   值
+int age = 10;
+
+var age = 10;   //它没有声明数据类型,但它会自动推断age是int
+
+String name = &quot;yycu&quot;
+
+bool isAlive = true
+
+String name = &quot;yycu&quot;;
+
+bool isAlive = true;
+
+int age = 10;
+
+double height = 1.67;
+</code></pre></div><h3 id="字面量"><a href="#字面量" class="header-anchor">#</a> 字面量</h3> <div class="language- extra-class"><pre class="language-text"><code>true
+2
+&quot;Kevin&quot;
+4.5
+
+//以上这几种就是字面量, 他们可以赋值给变量
+
+// 几个方法 定义 字符串的字面量
+String s1 = 'Single';
+String s2 = &quot;Double&quot;;
+String s3 = &quot;It\'s eays';    // \' 是转义
+String s4 = &quot;It's easy&quot;;    //可以外面用双引号
+
+String s5 = &quot;one ....&quot; +
+            &quot;two ....&quot;;    //可以用 + 来拼接字符串
+
+// 解析变量
+String name = &quot;Kevin&quot;;
+
+String message = &quot;My name is　$name&quot;;   // $后面全被视为变量, 因此一般需要加一个 {}
+String message = &quot;My name is　${name}&quot;;   // 才是最好的选择
+print(message)  // My name is Kevin
+
+print(&quot;The number of characters is String Kevin is ${name.length} &quot;)  //{}简单的表达式还是可以解析的
+
+int a = 20;
+int b = 10;
+print(&quot;a + b = ${ a +b}&quot;); // a + b = 30;
+</code></pre></div><h3 id="常量"><a href="#常量" class="header-anchor">#</a> 常量</h3> <p>永远不变的量,可以用 final const 来声明</p> <ul><li><p>final</p> <ul><li>final name = &quot;Kevin&quot;</li> <li>用于修饰变量，表示单赋值（single-assignment），使用final修饰的变量必须进行初始化，一旦被赋值之后，不能够再次被赋值,否则编译会报错。跟java的区别是：final不能用来修饰类和方法。</li></ul></li> <li><p>const</p> <ul><li>const PI ＝ &quot;3.14&quot;</li> <li>表示对象的状态完全可以在编译期间确定，并且完全是不可变的。</li> <li>const变量不会在内存中重复创建，如果表达式被调用了多次，则重用之前创建好的常量。</li> <li>const构造函数的前提是成员变量必须都是用final修饰的。const单例多例可以如下实现</li></ul></li> <li><p>static</p> <ul><li>用于修饰成员变量，这个变量是属于类的，而不是属于对象的，除此之外没有其他别的含义了，static修饰符的使用方式和Java类似。 static变量直到运行期被使用时才会实例化。</li></ul></li></ul> <h2 id="流程控制语句"><a href="#流程控制语句" class="header-anchor">#</a> 流程控制语句</h2> <h4 id="if-else"><a href="#if-else" class="header-anchor">#</a> if else</h4> <div class="language- extra-class"><pre class="language-text"><code>if(condition) {
+  // codition条件为真,执行这里
+} else {
+  // 条件为假, 执行这里
+}
+
+// 一个条件成立, 就不再判断其它条件了, 要注音条件的先后
+if(condition1) {
+
+} else if(condition2) {
+
+} else if (condition3) {
+
+} else {
+
+}
+</code></pre></div><h4 id="三元表达式"><a href="#三元表达式" class="header-anchor">#</a> 三元表达式</h4> <div class="language- extra-class"><pre class="language-text"><code>// condition? exp1 : exp2;     条件为真,执行exp1  假,执行 exp2
+</code></pre></div><h4 id="默认值"><a href="#默认值" class="header-anchor">#</a> ?? (默认值)</h4> <div class="language- extra-class"><pre class="language-text"><code>exp1 ?? exp2;   exp1 为真, 则 为exp1 ,  exp1 为假,则为epx2
+
+String name = &quot;yycu&quot;;
+String nameTo = name ?? &quot;Guest User&quot;;  // yycu
+</code></pre></div><h4 id="switch"><a href="#switch" class="header-anchor">#</a> switch</h4> <div class="language- extra-class"><pre class="language-text"><code>String grad = &quot;A&quot;;
+switch (grade) {
+  case 'A': 
+    print(&quot;A&quot;);
+    break;
+  case 'B':
+    print(&quot;B&quot;);
+    break;
+  case 'C':
+    print(&quot;C&quot;);
+    break;
+  default: 
+    print(&quot;FAIL&quot;);
+}
+</code></pre></div><ul><li>case 的值可以是 int  或 String.  其它数据类型不可以.</li></ul> <h2 id="迭代"><a href="#迭代" class="header-anchor">#</a> 迭代</h2> <h4 id="for-while-do-while"><a href="#for-while-do-while" class="header-anchor">#</a> for  while   do...while</h4> <div class="language- extra-class"><pre class="language-text"><code>void main() {
+  // 知道具体循环几次, 用这个
+  for(var i = 0; i&lt; 4; i++) {
+    print(&quot;Hello&quot;);
+  }
+
+  // 不知道具体循环几次 用 while 循环, 如果一定要至少循环一次用 do...while
+  int i = 0;
+  while(i&lt;4) {
+    print(&quot;Hello ...&quot;);
+    i++;
+  }
+
+  int j = 0;
+
+  do {
+    print(&quot;Hello do...&quot;);
+    j ++;
+  } while(j&lt;4);
+}
+
+</code></pre></div><h4 id="for-for-in"><a href="#for-for-in" class="header-anchor">#</a> for    for...in</h4> <p><strong>找到偶数</strong></p> <div class="language- extra-class"><pre class="language-text"><code>  //    初始值; 条件;  增或减
+  for (int i = 0; i&lt;= 10; i++) {
+    if( i%2 == 0) {
+      print(i);
+    }
+  }
+</code></pre></div><p><strong>迭代list</strong></p> <div class="language- extra-class"><pre class="language-text"><code>  List planets = [&quot;Mercury&quot;, &quot;Venus&quot;, &quot;Earch&quot;, &quot;Mars&quot;];
+  for (String i in planets) {
+    print(i);
+  }
+</code></pre></div><h4 id="while"><a href="#while" class="header-anchor">#</a> while</h4> <div class="language- extra-class"><pre class="language-text"><code>void main(){
+  // 初始值 
+  var i = 1;
+      //条件
+  while(i&lt;= 10) {
+    if ( i%2 == 0) {
+      print(i);
+    }
+    
+    // 增/减
+    i++;
+  }
+}
+</code></pre></div><h4 id="do-while"><a href="#do-while" class="header-anchor">#</a> do...while</h4> <div class="language- extra-class"><pre class="language-text"><code>void main(){
+  // 初始值
+  int i = 0;
+  do {
+    if(i%2 == 0) {             //循环体一定会执行至少一次, 即使,条件不符合
+      print(i);
+    }
+    i++;   // 增/ 减
+  } while(i&lt;=10);
+        // 条件
+}
+</code></pre></div><h4 id="break"><a href="#break" class="header-anchor">#</a> break</h4> <p>break  跳出循环, 只跳出本层的循环,  可以加label 来指定跳出的循环层</p> <div class="language- extra-class"><pre class="language-text"><code>myOuterLoop: for(int i = 1; i&lt;= 3; i++) {
+  innerLoop:  for(int j= 1; j&lt;= 3; j++) {
+    if(I==2 &amp;&amp; j==2){
+      break myOuterLoop;     //指定了label 就直跳出到指定的循环层
+    }
+  }
+}
+
+</code></pre></div><h4 id="continue"><a href="#continue" class="header-anchor">#</a> continue</h4> <p>continue  跳过这次循环(continue之后的代码不运行), 接着下一次</p> <p>没有 label 一般是本循环层, 也可以给循环加 label 提定,像上面 break那样</p> <div class="language- extra-class"><pre class="language-text"><code>
+  for(int i = 1; i&lt;= 10; i++) {
+    if(i == 5) {
+      continue;   // 等于 5 时, 跳过这镒循环,即不打印 5了, 因为代码在
+    }             // continue 后面, 直接进入下次的循环
+
+    print(i);
+  }
+</code></pre></div><h2 id="函数-方法"><a href="#函数-方法" class="header-anchor">#</a> 函数 / 方法</h2> <div class="language- extra-class"><pre class="language-text"><code>//返回值类型     函数名        参数
+int             FunctionName(int arg) {
+  // fn body
+  return xxx;      
+}
+
+</code></pre></div><ul><li>函数  也是对象, 可以赋值给变量, 也可当参数传给其它函数</li> <li>函数总是有返回值, 如果没有显式的 return 某个值, 则默认 是null</li> <li>返回值类型, 是可以选的, 但推荐写, 不要省略</li></ul> <h4 id="最简单的一个函数"><a href="#最简单的一个函数" class="header-anchor">#</a> 最简单的一个函数</h4> <div class="language- extra-class"><pre class="language-text"><code>
+void main(){
+  // 使函数
+  findPerimeter();
+}
+
+//定义函数
+void findPerimeter() {
+  int length = 4;
+  int breadth = 2;
+  int perimeter = 2 * (length + breadth);
+  print(perimeter);
+}
+</code></pre></div><h4 id="参数函数"><a href="#参数函数" class="header-anchor">#</a> 参数函数</h4> <div class="language- extra-class"><pre class="language-text"><code>
+void main(){
+  // 使函数      实参, 对应位置
+  findPerimeter(2, 4);
+}
+
+//定义函数
+                 // 位置参数1    位置参数2     形参
+void findPerimeter(int lenght, int breath) {
+  int perimeter = 2 * (length + breadth);
+  print(perimeter);
+}
+</code></pre></div><h4 id="有返回值"><a href="#有返回值" class="header-anchor">#</a> 有返回值</h4> <div class="language- extra-class"><pre class="language-text"><code>void main(){
+  int reactArea = getArea(2,3);
+}
+
+int getArea(int lenght, int breadth) {
+  int area = lenght * breadth;
+  return area;
+}
+</code></pre></div><h4 id="箭头函数"><a href="#箭头函数" class="header-anchor">#</a> 箭头函数</h4> <div class="language- extra-class"><pre class="language-text"><code>void findPerimeter(int lenght, int breath) =&gt; print(perimeter);
+
+int getArea(int lenght, int breadth) =&gt; lenght * breadth;
+
+</code></pre></div><ul><li>函数体 只有一个返回语句,不用写return, 不能用 {...} 来写多条语句.</li></ul> <h4 id="可选位置参数"><a href="#可选位置参数" class="header-anchor">#</a> 可选位置参数</h4> <div class="language- extra-class"><pre class="language-text"><code>void main(){
+  printCities(&quot;广州&quot;, &quot;深圳&quot;);
+}
+
+void printCities(String name1, [String name2, String name3]) {
+  print(name1);   // 广州
+  print(name2);   // 深圳
+  print(name3);   // null
+}
+</code></pre></div><ul><li>[]  包括的参数, 表示该参可选 , 可以不传, 可以同包括多个</li></ul> <h4 id="命名参数"><a href="#命名参数" class="header-anchor">#</a> 命名参数</h4> <div class="language- extra-class"><pre class="language-text"><code>void main(){
+  var result = findVolume(2, breadth: 3, height: 10);
+  print(result); // 50
+
+  var res2 = findVolume(2, height: 10, breadth: 3);
+  print(res2); // 50
+}
+
+int findVolume(int length, {int breadth, int height}) {
+  return (length + breadth) * height;
+}
+</code></pre></div><ul><li>传参数, 位置不再重要了,可以不按位置传, 上例,第一个参数是位置参数,它还是要按位置来传</li> <li>{}  里的是位置参数</li> <li>key 是参数的名, value 是参数的值</li></ul> <h4 id="默认参数"><a href="#默认参数" class="header-anchor">#</a> 默认参数</h4> <div class="language- extra-class"><pre class="language-text"><code>void main(){
+  var res1 = findVolume(2, 3, height: 5);
+  print(res1);  // 30
+  var res2 = findVolume(2, 3);
+  print(res2); // 60
+}
+
+int findVolume( int length, int breadth, { int height = 10}) {
+  return length * breadth * height;
+}
+
+
+</code></pre></div><ul><li>{int name}  无论是命名参数  还是 默认参数 {int height = 10},  传参时是一样的方法</li> <li>key: value     参数名:参数值　这样的传参都是和位置无关的</li></ul> <h2 id="错误处理"><a href="#错误处理" class="header-anchor">#</a> 错误处理</h2> <h4 id="系统错误处理"><a href="#系统错误处理" class="header-anchor">#</a> 系统错误处理</h4> <div class="language- extra-class"><pre class="language-text"><code>void main() {
+  int result = 12~/0;
+  print(result);
+}
+</code></pre></div><ul><li>~ 表示,除后结果为 int 类型</li> <li>除数不能为 0 ,  系统会抛出一个错误, 而停止整个应用的运行</li></ul> <div class="language- extra-class"><pre class="language-text"><code>  try {
+    int result = 12~/0;
+    print(result);
+  } on IntegerDivisionByZeroException {
+    print(&quot;除数不能为0&quot;);
+  }
+
+
+  try {
+    int result = 12~/0;
+    print(result);
+  } catch(e) {
+    print(e);
+  }
+
+
+  try {
+    int result = 12~/0;
+    print(result);
+  } catch(e, s) {
+    print(e);
+    print(s);
+  }
+
+
+    try {
+    int result = 12~/0;
+    print(result);
+  } catch(e) {
+    print(e);
+  } finally{
+    print(&quot;finally&quot;)
+  }
+
+
+</code></pre></div><ul><li>预知到错误的类型, 可以用on 具体的错误类型</li> <li>无法预知,就用 catch(e)    e是具体的错误类型</li> <li>s 是错误栈, 即可以用它来找到哪里出错了,错了什么</li> <li>finally 里的代码,无论是否有错误发生,它都会执行</li></ul> <h4 id="自定义错误处理"><a href="#自定义错误处理" class="header-anchor">#</a> 自定义错误处理</h4> <div class="language- extra-class"><pre class="language-text"><code>void main() {
+  try {
+    depositMoney(-10);
+  } on catch(e) {
+    print(e.errorMessage)
+  }
+}
+
+class DepositException implements Exception {
+  String errorMessage() {
+    print(&quot;u cannot enter amout less than 0&quot;);
+    return &quot;u cannot enter amout less than 0&quot;;
+  }
+}
+
+void depositMoney(int amount){
+  if(amount&lt; 0) {
+    throw new DepositException()
+  }
+</code></pre></div><h2 id="面向对象"><a href="#面向对象" class="header-anchor">#</a> 面向对象</h2> <div class="language- extra-class"><pre class="language-text"><code>void main() {
+
+  var std1 =  Student();   // 实例化, 调用了类的 默认 构造函数
+  std1.id = 24;
+  std1.name = &quot;Kevin&quot;;
+  std1.study();
+
+  var std2 = Student(12, 'yycu');  // 调用有参的构造函数
+
+    var std3 = Student.myCustomConstrunctor();  //调用 自定义的构造函数
+}
+// 定义类
+class Student {
+  int id;              // 默认值是null   实例的
+  String name;         // 默认值是null   实例的
+   
+  int age = 32;        // age 是 32     实例的
+
+  Student() {
+    // 默认的构造函数      // 可以不用写
+    print(&quot; 默认构造函数&quot;)
+  }
+
+  Student(int id, String name) {    //有参的构造函数
+    this.id = id
+    this.name = name
+  }
+
+  Student(this.id,this.name) {    // 构造函数, 这样写更方便
+  }
+
+    
+  Student.myCustomConstrunctor() {   // myCustomConstrunctor 这个名字随你起
+     // 自定的命名构造函数
+     print(&quot;自定的命名构造函数&quot;);
+  }
+
+  void study() {
+    int id = 12;   // 作用域就在这个函数里了
+    print(&quot;${this.name} study&quot;);
+  }
+
+  void sleep() {
+    print(&quot;${this.name} sleep&quot;);
+  }
+}
+</code></pre></div><ul><li>上面没有明显的声明一个 构造函数, 其它是有的,系统提供了一个无参的构造函数 Student()</li> <li>只能定义一个构造函数, 上面只是演示, java就可以定义多个多种构造函数.</li> <li>类同名的构造函数, 有参或无参,只能存在一个</li> <li>命名构造函数,可以多个, 可以和</li></ul> <h2 id="进一步了解面向对象"><a href="#进一步了解面向对象" class="header-anchor">#</a> 进一步了解面向对象</h2> <h4 id="getter-setter"><a href="#getter-setter" class="header-anchor">#</a> getter  setter</h4> <div class="language- extra-class"><pre class="language-text"><code>void main() {
+  var std = Student();
+  std.name = &quot;yycu&quot;;
+  print(std.name);
+  
+  std.percentage = 438;  // 调用  set 
+  print(std.percentage);  // 调用 get
+}
+
+class Student {
+  String name;    // 实例属性, 默认的setter  getter
+
+  int _percent;   // 下面直接用, 没用this.xx  是把它当作本地作用域的一个变量
+                  // 也不是私有属性, 一个以 _　 开头
+
+  void set percentage(int marksSecured) {
+    _percent =  (marksSecured ~/ 500) * 100;
+  }
+
+  //  void set percentage(int marksSecured) =&gt; _percent =  (marksSecured ~/ 500) * 100;
+  
+
+  int get percentage {
+    return _percent;
+  }
+
+  // int get percentage =&gt; _percent
+}
+
+
+</code></pre></div><h4 id="继承"><a href="#继承" class="header-anchor">#</a> 继承</h4> <p>默认所有的类 都是 继承了 Object 类</p> <p>Object 类提供了一些默认的接口</p> <ul><li>toString()</li> <li>hashCode</li> <li>operator ==</li></ul> <p>继承</p> <ul><li>可以代码复用</li> <li>方法可以重写</li> <li>不写重复代码</li></ul> <div class="language- extra-class"><pre class="language-text"><code>void main() {
+
+}
+
+class Animal {
+  String color = &quot;brown&quot;;
+
+  void eat() {
+    print(&quot;animal eat&quot;);
+  }
+}
+
+class Dog extends Animal {
+
+  String breed;
+
+  String color =&quot;Black&quot;;   // 属性也会覆盖父类的属性
+
+  void eat() {       // 在子类,声明与父类同名的方法
+                      // 重写了父类的方法, 实例调用 时就是调用 自已的eat    
+    super.eat();  // 可以通过super 关键字调用 父类的方法  
+    print(&quot;Dog eat&quot;);
+
+
+  }
+
+  void bark() {
+    print(&quot;bark&quot;);
+  }
+}
+
+class Cat extends Animal{
+  int age;
+
+
+  void meow() {
+    print(&quot;Meow!&quot;);
+  }
+}
+</code></pre></div><ul><li>通过 extends 继承</li></ul> <p>32</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mobile/Flutter/" class="prev router-link-active">
+        Flutter
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a761fdad.js" defer></script><script src="/assets/js/2.f625eefe.js" defer></script><script src="/assets/js/42.121cbf6d.js" defer></script>
+  </body>
+</html>

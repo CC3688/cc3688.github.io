@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TS in Vue | CC3688 blog</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.1b5c6595.css" as="style"><link rel="preload" href="/assets/js/app.a761fdad.js" as="script"><link rel="preload" href="/assets/js/2.f625eefe.js" as="script"><link rel="preload" href="/assets/js/26.2ca22227.js" as="script"><link rel="prefetch" href="/assets/js/10.9276f3bc.js"><link rel="prefetch" href="/assets/js/11.b682676a.js"><link rel="prefetch" href="/assets/js/12.e93f1a58.js"><link rel="prefetch" href="/assets/js/13.c670705b.js"><link rel="prefetch" href="/assets/js/14.3afc9644.js"><link rel="prefetch" href="/assets/js/15.ce0ec2af.js"><link rel="prefetch" href="/assets/js/16.0c8fed25.js"><link rel="prefetch" href="/assets/js/17.70f271e7.js"><link rel="prefetch" href="/assets/js/18.325e0978.js"><link rel="prefetch" href="/assets/js/19.57d5157d.js"><link rel="prefetch" href="/assets/js/20.c4a7a36b.js"><link rel="prefetch" href="/assets/js/21.d185011b.js"><link rel="prefetch" href="/assets/js/22.b6cd295c.js"><link rel="prefetch" href="/assets/js/23.077bd992.js"><link rel="prefetch" href="/assets/js/24.241b12cb.js"><link rel="prefetch" href="/assets/js/25.f8d57d84.js"><link rel="prefetch" href="/assets/js/27.e11e823c.js"><link rel="prefetch" href="/assets/js/28.50281ac8.js"><link rel="prefetch" href="/assets/js/29.1fce1f13.js"><link rel="prefetch" href="/assets/js/3.48bf621d.js"><link rel="prefetch" href="/assets/js/30.9c96825f.js"><link rel="prefetch" href="/assets/js/31.12c3998e.js"><link rel="prefetch" href="/assets/js/32.fb94fa3c.js"><link rel="prefetch" href="/assets/js/33.bd9b462f.js"><link rel="prefetch" href="/assets/js/34.58ac7858.js"><link rel="prefetch" href="/assets/js/35.b55b61d6.js"><link rel="prefetch" href="/assets/js/36.245f58ef.js"><link rel="prefetch" href="/assets/js/37.d025f029.js"><link rel="prefetch" href="/assets/js/38.d197d8d0.js"><link rel="prefetch" href="/assets/js/39.b7e1ce60.js"><link rel="prefetch" href="/assets/js/4.97b1d945.js"><link rel="prefetch" href="/assets/js/40.0c1a84a9.js"><link rel="prefetch" href="/assets/js/41.d4afa780.js"><link rel="prefetch" href="/assets/js/42.121cbf6d.js"><link rel="prefetch" href="/assets/js/43.0479770a.js"><link rel="prefetch" href="/assets/js/44.d7c52248.js"><link rel="prefetch" href="/assets/js/45.d1b8ece5.js"><link rel="prefetch" href="/assets/js/46.0da90371.js"><link rel="prefetch" href="/assets/js/47.3ba8bcd7.js"><link rel="prefetch" href="/assets/js/48.b2dc0303.js"><link rel="prefetch" href="/assets/js/49.61cc678b.js"><link rel="prefetch" href="/assets/js/5.63cb3433.js"><link rel="prefetch" href="/assets/js/50.712e3a95.js"><link rel="prefetch" href="/assets/js/51.3e671530.js"><link rel="prefetch" href="/assets/js/6.345a20a1.js"><link rel="prefetch" href="/assets/js/7.57211556.js"><link rel="prefetch" href="/assets/js/8.e8f7270a.js"><link rel="prefetch" href="/assets/js/9.68af55ab.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1b5c6595.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CC3688 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/Vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/framework/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Adonis/" class="nav-link">
+  Adonis
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Django/" class="nav-link">
+  Django
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动" class="dropdown-title"><span class="title">移动</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/RN/" class="nav-link">
+  RN
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/Flutter/" class="nav-link">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/jingguan/" class="nav-link">
+  经管
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/Vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/framework/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Adonis/" class="nav-link">
+  Adonis
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Django/" class="nav-link">
+  Django
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动" class="dropdown-title"><span class="title">移动</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/RN/" class="nav-link">
+  RN
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/Flutter/" class="nav-link">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/jingguan/" class="nav-link">
+  经管
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/framework/Vue/" class="sidebar-link">Vue</a></li><li><a href="/framework/Vue/basic.html" class="sidebar-link">basic</a></li><li><a href="/framework/Vue/TS_Vue.html" class="active sidebar-link">TS in Vue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/framework/Vue/TS_Vue.html#开始" class="sidebar-link">开始</a></li><li class="sidebar-sub-header"><a href="/framework/Vue/TS_Vue.html#类-组件" class="sidebar-link">类 组件</a></li><li class="sidebar-sub-header"><a href="/framework/Vue/TS_Vue.html#data-props-计算属性-方法-watchers-emit" class="sidebar-link">data, props, 计算属性, 方法, watchers, emit</a></li><li class="sidebar-sub-header"><a href="/framework/Vue/TS_Vue.html#生命周期勾子" class="sidebar-link">生命周期勾子</a></li><li class="sidebar-sub-header"><a href="/framework/Vue/TS_Vue.html#mixins" class="sidebar-link">mixins</a></li><li class="sidebar-sub-header"><a href="/framework/Vue/TS_Vue.html#vuex" class="sidebar-link">Vuex</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ts-in-vue"><a href="#ts-in-vue" class="header-anchor">#</a> TS in Vue</h1> <p><a href="https://blog.logrocket.com/how-to-write-a-vue-js-app-completely-in-typescript/" target="_blank" rel="noopener noreferrer">原文链接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="开始"><a href="#开始" class="header-anchor">#</a> 开始</h2> <p>创建应用</p> <div class="language- extra-class"><pre class="language-text"><code>vue create yourAppName
+</code></pre></div><p>然后按下面的选项进行配置</p> <p><img src="/images/ts_vue_set.jpg" alt=""></p> <p>创建完成后,进入项目并运行</p> <h2 id="类-组件"><a href="#类-组件" class="header-anchor">#</a> 类 组件</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Vue } from &quot;vue-property-decorator&quot;;
+import News from './News.vue'
+
+@Component({
+  name: 'componentName',
+  components: {
+    News
+  }
+})
+export default class HelloWorld extends Vue {
+}
+</code></pre></div><ul><li>需要在script 声明lang=&quot;ts&quot;, 表示我们是用ts语言写的</li> <li>从官方推荐的第三方包 vue-property-decorator 引入相关的装饰器</li> <li>装饰器,不传参则省略写(),  需要传则能过() 参数传递过去 参数是一个{}</li> <li>参数一般,有name 给组件起名字, components: {}  引入入组件</li></ul> <h2 id="data-props-计算属性-方法-watchers-emit"><a href="#data-props-计算属性-方法-watchers-emit" class="header-anchor">#</a> data, props, 计算属性, 方法, watchers, emit</h2> <h4 id="data"><a href="#data" class="header-anchor">#</a> data</h4> <p>类属性, 就是data</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Vue } from &quot;vue-property-decorator&quot;;
+
+@Component({
+  name: &quot;News&quot;
+})
+export default class News extends Vue {
+  public publisher = &quot;人民教育出版社&quot;;
+  public newsList: object[] = [
+    { title: &quot;标题一&quot;, content: &quot;内容一&quot; },
+    { title: &quot;标题二&quot;, content: &quot;内容二&quot; },
+    { title: &quot;标题三&quot;, content: &quot;内容三&quot; }
+  ];
+}
+&lt;/script&gt;
+
+</code></pre></div><h4 id="props"><a href="#props" class="header-anchor">#</a> props</h4> <p>通过 装饰器 props 来定义</p> <div class="language- extra-class"><pre class="language-text"><code>import { Component, Prop, Vue } from 'vue-property-decorator'
+
+@Component
+export default class HelloWorld extends Vue {
+  @Prop() readonly msg!: string
+  @Prop({default: 'John doe'}) readonly name: string
+  @Prop({required: true}) readonly age: number
+  @Prop(String) readonly address: string
+  @Prop({required: false, type: String, default: 'Developer'}) readonly job: string
+}
+&lt;/script&gt;
+</code></pre></div><ul><li>属性的配置通过 Prop 装饰器的参数配置</li> <li>()  必须</li> <li>readonly 防止人为改变prop的值</li></ul> <h4 id="计算属性"><a href="#计算属性" class="header-anchor">#</a> 计算属性</h4> <p>计算属性通过 gettter 和 setter</p> <div class="language- extra-class"><pre class="language-text"><code>export default class HelloWorld extends Vue {
+  get fullName(): string {
+    return this.first+ ' '+ this.last
+  }
+  set fullName(newValue: string) {
+    let names = newValue.split(' ')
+    this.first = names[0]
+    this.last = names[names.length - 1]
+  }
+}
+</code></pre></div><ul><li>fullName 这是计算属性</li></ul> <h4 id="methods"><a href="#methods" class="header-anchor">#</a> methods</h4> <p>类方法,就是 methods 里的方法</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Vue } from &quot;vue-property-decorator&quot;;
+
+@Component
+export default class News extends Vue {
+  public sayHello():void {
+    alert('hello')
+  }
+}
+&lt;/script&gt;
+</code></pre></div><h4 id="watchers"><a href="#watchers" class="header-anchor">#</a> watchers</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Watch, Vue } from &quot;vue-property-decorator&quot;;
+
+@Component
+export default class News extends Vue {
+  public publisher = &quot;人民教育出版社&quot;;
+
+  @Watch(&quot;publisher&quot;, {
+    immediate: true,
+    deep: true
+  })
+  publisherChange(newValue: string, oldValue: string) {
+    console.log(&quot;newvalue:&quot;, newValue);
+    console.log(&quot;oldValue:&quot;, oldValue);
+  }
+}
+&lt;/script&gt;
+
+</code></pre></div><ul><li>需要 Watch 装饰器</li> <li>Watch 装是要鉴别的属性或变量</li> <li>immeditat  deep 配置在第二个参数配置,它是一个{}</li> <li>方法名是任意起的一个方法名, 第一个参数为新值, 第二个为旧值</li></ul> <h4 id="emit-触发自定义事件"><a href="#emit-触发自定义事件" class="header-anchor">#</a> emit 触发自定义事件</h4> <div class="language- extra-class"><pre class="language-text"><code>@Emit()
+addToCount(n: number) {
+  this.count += n
+
+  // return   xxx      //可以被监听自定义事件函数以参数的方式接收到
+}
+
+@Emit('resetData')
+resetCount() {
+  this.count = 0
+
+  // return   xxx      //可以被监听自定义事件函数以参数的方式接收到
+}
+</code></pre></div><ul><li>第一种, 装饰器没有传递 参数(自定义事件名),则 默认触发与被装饰的方法同名的事件</li> <li>默认触发是用同名事件, 驼峰命名,会被自动转为 烤串模式</li> <li>如上例 方法名 addToCount   会默认触发 add-to-count 自定义事件</li> <li>第二中, 有传参, 参数就是要触发的自定事,不转换命名方式了</li> <li>如上例, 传入参数为 resetData 就触发 resetData 自定义事件</li> <li>如上例,方法名就可以随便起名了</li> <li>自定事件, 传参, 可以在方法体里 return xx    会被监听事件的函数的参数接收到</li></ul> <h2 id="生命周期勾子"><a href="#生命周期勾子" class="header-anchor">#</a> 生命周期勾子</h2> <p>在类里定义 和 生命周期勾子 同名的方法就可以了</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Prop, Watch, Vue, Emit } from &quot;vue-property-decorator&quot;;
+
+@Component({
+  name: &quot;News&quot;
+})
+export default class News extends Vue {
+  constructor() {
+    super()
+    console.log(&quot;constructor&quot;)     //第一个执行
+  }
+
+  created() {
+    console.log(&quot;created&quot;);         //第二个执行
+  }
+
+  mounted() {
+    console.log(&quot;mounted&quot;);          //第三个执行
+  }
+}
+&lt;/script&gt;
+</code></pre></div><ul><li>勾子函数, 直接在类里定义同名的方法就可以了</li> <li>以上的执行顺序,是它们三个的执行顺序</li></ul> <h2 id="mixins"><a href="#mixins" class="header-anchor">#</a> mixins</h2> <ol><li>定义mixin 文件</li></ol> <p>// MyMixin.ts</p> <div class="language- extra-class"><pre class="language-text"><code>import { Component, Vue } from &quot;vue-property-decorator&quot;;
+
+@Component
+export default class MyMixin extends Vue {
+  public mixinName = &quot;yycu&quot;;
+
+  created() {
+    console.log(&quot;mixinName::&quot;, this.mixinName);
+  }
+}
+
+</code></pre></div><ol start="2"><li>使用</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Mixins} from &quot;vue-property-decorator&quot;;
+import MyMixin from &quot;./MyMixin&quot;;
+
+@Component
+export default class News extends Mixins(MyMixin) {
+
+}
+&lt;/script&gt;
+</code></pre></div><ul><li>定义时,像定义一个类组件那样做就可以了</li> <li>使用时, 注意, 该组件,不再直接继承(extends)Vue了,</li> <li>通过 Mixins方法, 传入需要mixix的类组件</li></ul> <h2 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h2> <p>需要先安装两个第三方包</p> <div class="language- extra-class"><pre class="language-text"><code>npm install vuex-module-decorators -D
+npm install vuex-class -D
+</code></pre></div><p>vuex的使用一般都是要使用它的namespaced</p> <ol><li>创建 store 目录, 并创建一个 index.ts</li></ol> <div class="language- extra-class"><pre class="language-text"><code>import Vue from &quot;vue&quot;;
+import Vuex from &quot;vuex&quot;;
+import User from &quot;@/store/modules/user&quot;
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+  state: {},
+  mutations: {},
+  actions: {},
+  modules: {
+    User
+  }
+});
+
+</code></pre></div><ol start="2"><li>在store目录下再创建一个 module 文件夹, 创建一个 user.ts 文件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>import { VuexModule, Module, Mutation, Action } from &quot;vuex-module-decorators&quot;;
+
+
+@Module({ namespaced: true})
+class User extends VuexModule {
+  public name = &quot;yycu&quot;;
+
+  get nameUpperCase():string {
+    return this.name.toLocaleUpperCase()
+  }
+
+  @Mutation
+  public setName(newName: string): void {
+    this.name = newName;
+  }
+
+  @Action({commit: &quot;setName&quot;})
+  public updateName(newName: string): string {
+    return newName
+  }
+}
+export default User;
+</code></pre></div><ul><li>类属性 相当于  state 里的属性</li> <li>get  相当于 getter 里的属性</li> <li>action 返回值, 会作为 playload 传递到mutaiton</li></ul> <ol start="3"><li>在组件里使用</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import { Component, Vue } from 'vue-property-decorator'
+
+import { namespace } from 'vuex-class'
+const user = namespace('User')
+
+@Component
+export default class User extends Vue {
+  @user.State
+  public name!: string
+
+  @user.Getter
+  public nameUpperCase!: string
+
+  @user.Action
+  public updateName!: (newName: string) =&gt; void
+}
+&lt;/script&gt;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/framework/Vue/basic.html" class="prev">
+        basic
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a761fdad.js" defer></script><script src="/assets/js/2.f625eefe.js" defer></script><script src="/assets/js/26.2ca22227.js" defer></script>
+  </body>
+</html>
