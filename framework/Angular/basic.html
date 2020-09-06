@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础 | CC3688 blog</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.1b5c6595.css" as="style"><link rel="preload" href="/assets/js/app.f104056c.js" as="script"><link rel="preload" href="/assets/js/2.f067c4ab.js" as="script"><link rel="preload" href="/assets/js/19.36f43c9f.js" as="script"><link rel="prefetch" href="/assets/js/10.f8c5fd4f.js"><link rel="prefetch" href="/assets/js/11.b682676a.js"><link rel="prefetch" href="/assets/js/12.5867ffda.js"><link rel="prefetch" href="/assets/js/13.0321094f.js"><link rel="prefetch" href="/assets/js/14.3afc9644.js"><link rel="prefetch" href="/assets/js/15.11d13f21.js"><link rel="prefetch" href="/assets/js/16.ca488a04.js"><link rel="prefetch" href="/assets/js/17.fc8ab246.js"><link rel="prefetch" href="/assets/js/18.5c079205.js"><link rel="prefetch" href="/assets/js/20.65d0d020.js"><link rel="prefetch" href="/assets/js/21.10f15dcd.js"><link rel="prefetch" href="/assets/js/22.4ca71c07.js"><link rel="prefetch" href="/assets/js/23.32570f0e.js"><link rel="prefetch" href="/assets/js/24.8adaca1c.js"><link rel="prefetch" href="/assets/js/25.c4992757.js"><link rel="prefetch" href="/assets/js/26.9ee0f253.js"><link rel="prefetch" href="/assets/js/27.52469adf.js"><link rel="prefetch" href="/assets/js/28.5b696741.js"><link rel="prefetch" href="/assets/js/29.5e26473c.js"><link rel="prefetch" href="/assets/js/3.bb206f19.js"><link rel="prefetch" href="/assets/js/30.57fb3628.js"><link rel="prefetch" href="/assets/js/31.a080c0c7.js"><link rel="prefetch" href="/assets/js/32.4f9de202.js"><link rel="prefetch" href="/assets/js/33.8d6a7dcc.js"><link rel="prefetch" href="/assets/js/34.fd302504.js"><link rel="prefetch" href="/assets/js/35.361475c4.js"><link rel="prefetch" href="/assets/js/36.1a34c211.js"><link rel="prefetch" href="/assets/js/37.6be3a049.js"><link rel="prefetch" href="/assets/js/38.dc76c326.js"><link rel="prefetch" href="/assets/js/39.962b52ba.js"><link rel="prefetch" href="/assets/js/4.97b1d945.js"><link rel="prefetch" href="/assets/js/40.67266698.js"><link rel="prefetch" href="/assets/js/41.200a391d.js"><link rel="prefetch" href="/assets/js/42.c2ab3aca.js"><link rel="prefetch" href="/assets/js/43.aae04c82.js"><link rel="prefetch" href="/assets/js/44.687ab86b.js"><link rel="prefetch" href="/assets/js/45.96f413a8.js"><link rel="prefetch" href="/assets/js/46.fe6f40ac.js"><link rel="prefetch" href="/assets/js/47.5e0f7bd7.js"><link rel="prefetch" href="/assets/js/48.ae585f03.js"><link rel="prefetch" href="/assets/js/49.d654a153.js"><link rel="prefetch" href="/assets/js/5.63cb3433.js"><link rel="prefetch" href="/assets/js/50.20b14af3.js"><link rel="prefetch" href="/assets/js/51.c521dcb9.js"><link rel="prefetch" href="/assets/js/52.26491e4e.js"><link rel="prefetch" href="/assets/js/53.52d72321.js"><link rel="prefetch" href="/assets/js/6.345a20a1.js"><link rel="prefetch" href="/assets/js/7.cbd050f5.js"><link rel="prefetch" href="/assets/js/8.93c436e5.js"><link rel="prefetch" href="/assets/js/9.5ceb8851.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1b5c6595.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CC3688 blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Angular/" class="nav-link router-link-active">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/framework/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Adonis/" class="nav-link">
+  Adonis
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Django/" class="nav-link">
+  Django
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动" class="dropdown-title"><span class="title">移动</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/RN/" class="nav-link">
+  RN
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/Flutter/" class="nav-link">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/jingguan/" class="nav-link">
+  经管
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/JS/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TS/" class="nav-link">
+  TS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/tools/" class="nav-link">
+  tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Angular/" class="nav-link router-link-active">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/framework/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Adonis/" class="nav-link">
+  Adonis
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/framework/Django/" class="nav-link">
+  Django
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动" class="dropdown-title"><span class="title">移动</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/RN/" class="nav-link">
+  RN
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/Flutter/" class="nav-link">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/jingguan/" class="nav-link">
+  经管
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/framework/Angular/" class="sidebar-link">angular</a></li><li><a href="/framework/Angular/basic.html" class="active sidebar-link">基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#安装脚手架" class="sidebar-link">安装脚手架</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#创建项目" class="sidebar-link">创建项目</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#运行项目" class="sidebar-link">运行项目</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#创建组件" class="sidebar-link">创建组件</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#组件-及-模板" class="sidebar-link">组件 及 模板</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#引入图片" class="sidebar-link">引入图片</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#循环数组-显示索引" class="sidebar-link">循环数组,显示索引</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#条件判断-ngif" class="sidebar-link">条件判断  ngIf</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#ngswitch" class="sidebar-link">ngSwitch</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#属性-ngclass-ngstyle" class="sidebar-link">属性 [ngClass]  [ngStyle]</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#管道" class="sidebar-link">管道</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#双向数据绑定-只是针对表单" class="sidebar-link">双向数据绑定   (只是针对表单)</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#服务" class="sidebar-link">服务</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#操作dom-和-动画" class="sidebar-link">操作DOM 和 动画</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#组件间通讯" class="sidebar-link">组件间通讯</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#angular-生命周期函数" class="sidebar-link">angular 生命周期函数</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#rxjs-异步数据流" class="sidebar-link">Rxjs 异步数据流</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#请求数据模块-httpclientmodule" class="sidebar-link">请求数据模块 HttpClientModule</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#使用第三方请求数据方法" class="sidebar-link">使用第三方请求数据方法</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#路由" class="sidebar-link">路由</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#querystring-路由" class="sidebar-link">querystring 路由</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#路由-params-参数" class="sidebar-link">路由 params 参数</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#js-导航" class="sidebar-link">js 导航</a></li><li class="sidebar-sub-header"><a href="/framework/Angular/basic.html#嵌套路由" class="sidebar-link">嵌套路由</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h1> <h2 id="安装脚手架"><a href="#安装脚手架" class="header-anchor">#</a> 安装脚手架</h2> <div class="language- extra-class"><pre class="language-text"><code>&gt; npm i -g @angular/cli
+</code></pre></div><h2 id="创建项目"><a href="#创建项目" class="header-anchor">#</a> 创建项目</h2> <div class="language- extra-class"><pre class="language-text"><code>&gt; ng new 项目名
+</code></pre></div><h2 id="运行项目"><a href="#运行项目" class="header-anchor">#</a> 运行项目</h2> <div class="language- extra-class"><pre class="language-text"><code>&gt; ng serve --open
+</code></pre></div><h2 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h2> <div class="language- extra-class"><pre class="language-text"><code>|-- e2e   端对端测试
+|-- node_modules 依赖包
+|-- package.json 项目配置文件
+|-- src   写代码的
+  |-- app  组件 和 根模块
+     |-- app.module.ts  根模块
+     |-- app.components.less
+     |-- app.components.ts
+     |-- app.components.html    这三个文件是 根组件
+  |-- assets  静态资源文件
+  |-- environments 环境相关的文件
+  |-- browserslist 浏览器支持配置文件 
+  |--favicon.ico
+  |--index.html   入口文件
+  |--karma.confi.js
+  |--main.ts
+  |--polyfills.ts  填充库
+  |--styles.less  公共样式文件
+
+|--.editorconfig 编辑器配置文件
+...
+</code></pre></div><h2 id="创建组件"><a href="#创建组件" class="header-anchor">#</a> 创建组件</h2> <div class="language- extra-class"><pre class="language-text"><code>&gt; ng g component components/news
+</code></pre></div><p>这个是在文件夹components 里创建一个 news 组件
+通过脚手架创建的组件,系统为自动在 模块帮我们引入 这个新建的组件</p> <h2 id="组件-及-模板"><a href="#组件-及-模板" class="header-anchor">#</a> 组件 及 模板</h2> <p>1 声明一个数据:  在组件(类里)声明一个属性
+2 在模版绑定数据  </p> <div class="language- extra-class"><pre class="language-text"><code>interface user {
+  name: string
+}
+// ts  类里
+public title:string = '这是一个新闻组件'  //推荐用这种方式
+msg=&quot;这样也可以&quot;    // 默认是public   类型会推断它是string
+public userInfo: user = {
+  name: '张三'
+}
+public message:string
+public content:string = '&lt;h2&gt;我是h2&lt;/h2&gt;'
+public arr: string[] = ['aaaa', 'bbbb', 'cccc']
+// 上边是声明并赋值, 也可以声明,然后在构造函数里给属性赋值, 如果上面有赋值则会被改变
+constructor() { 
+  this.message = '我是message'
+}
+
+
+// html 模板里
+&lt;h2&gt;{{ title }}&lt;/h2&gt;
+&lt;h2&gt;{{ msg }}&lt;/h2&gt;
+&lt;h2&gt;{{ userInfo.name }}&lt;/h2&gt;
+&lt;div [title]=&quot;title&quot;&gt;张 三&lt;/div&gt;    // 绑定属性,  title 会是 ts 类里的 title属性的值
+&lt;div [innerHTML]=&quot;content&quot;&gt;        // 可以解析 html  而不是仅仅解析为文本
+&lt;/div&gt;       
+&lt;ul&gt;                               // 通过 *ngFor  普通循环渲染数组, 如果元素是一个{} 可以通过 . 运算符
+  &lt;li *ngFor=&quot;let item of arr&quot;&gt;{{ item }}&lt;/li&gt;   // {{ item.username}}
+&lt;/ul&gt;
+
+</code></pre></div><h2 id="引入图片"><a href="#引入图片" class="header-anchor">#</a> 引入图片</h2> <p>1 需要把图片复制到 静态资源目录 assets 目录下
+2 路径以  assets   开头</p> <p>3 如果是远程图片,可以通过属性绑定</p> <div class="language- extra-class"><pre class="language-text"><code>//html
+&lt;img src=&quot;assets/fj.jpeg&quot; style=&quot;width: 100px;&quot;&gt;
+&lt;img [src]=&quot;picUrl&quot; style=&quot;width: 100px;&quot;&gt;   // picUrl 是图片的地址
+
+</code></pre></div><h2 id="循环数组-显示索引"><a href="#循环数组-显示索引" class="header-anchor">#</a> 循环数组,显示索引</h2> <div class="language- extra-class"><pre class="language-text"><code>// ts
+public arr:string[] = ['aaa', 'bbb', 'ccc']
+
+//html
+
+&lt;ul&gt;                                    //  0  1   2
+  &lt;li *ngFor=&quot;let item of arr; let key=index&quot; &gt;{{key}} -- {{item}}&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div><h2 id="条件判断-ngif"><a href="#条件判断-ngif" class="header-anchor">#</a> 条件判断  ngIf</h2> <p>*ngIf        注意,系统没有 提供 ngElse</p> <div class="language- extra-class"><pre class="language-text"><code>// ts
+public flag:boolean = false
+
+
+// html
+&lt;div *ngIf=&quot;flag&quot;&gt;
+  &lt;img src=&quot;assets/fj.jpeg&quot;  style=&quot;width: 100px;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div *ngIf=&quot;!flag&quot;&gt;
+  &lt;img src=&quot;assets/ys.jpg&quot;  style=&quot;width: 100px;&quot;&gt;
+&lt;/div&gt;
+
+</code></pre></div><h2 id="ngswitch"><a href="#ngswitch" class="header-anchor">#</a> ngSwitch</h2> <div class="language- extra-class"><pre class="language-text"><code>// ts
+public orderStatus: number = 3 // 1 已经支付   2 支付并且确认订单   3  表示已经发货   4  已经收货   5 无效
+
+
+// html
+&lt;ul [ngSwitch]=&quot;orderStatus&quot;&gt;
+    &lt;li *ngSwitchCase=&quot;1&quot;&gt;已经支付&lt;/li&gt;
+    &lt;li *ngSwitchCase=&quot;2&quot;&gt;支付并且确认订单&lt;/li&gt;
+    &lt;li *ngSwitchCase=&quot;3&quot;&gt;表示已经发货&lt;/li&gt;
+    &lt;li *ngSwitchCase=&quot;4&quot;&gt;已经收货&lt;/li&gt;
+    &lt;li *ngSwitchDefault&gt;无效&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div><h2 id="属性-ngclass-ngstyle"><a href="#属性-ngclass-ngstyle" class="header-anchor">#</a> 属性 [ngClass]  [ngStyle]</h2> <div class="language- extra-class"><pre class="language-text"><code> 
+//html         value 值为 真就有key的类名
+&lt;div class=&quot;red&quot; [ngClass]=&quot;{'red': true, 'blue': true}&quot;&gt; 
+&lt;/div&gt;
+
+
+&lt;p [ngStyle]=&quot;{'color': 'red'}&quot;&gt;
+&lt;/p&gt;
+
+
+</code></pre></div><h2 id="管道"><a href="#管道" class="header-anchor">#</a> 管道</h2> <p>框架内置了一些, 也可以自定义</p> <div class="language- extra-class"><pre class="language-text"><code>// ts 
+publuc today: any = new Date()
+//html 
+&lt;h3&gt;{{today|date: 'yyyy-MM-dd HH:mm:ss'}}&lt;/h3&gt;
+</code></pre></div><h2 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h2> <div class="language- extra-class"><pre class="language-text"><code>//  ts
+run() {
+  alert('run...')
+}
+
+keyDown(e) {
+  if(e.keyCode === 13) {
+    alert(e.target.value)
+  }
+}
+
+//html    事件写在()里,   方法要带上()
+&lt;button (click)=&quot;run()&quot;&gt;事件&lt;/button&gt;
+
+&lt;input type=&quot;text&quot; (keydown)=&quot;keyDown($event)&quot;&gt;
+</code></pre></div><h2 id="双向数据绑定-只是针对表单"><a href="#双向数据绑定-只是针对表单" class="header-anchor">#</a> 双向数据绑定   (只是针对表单)</h2> <p>需要先在 app.moudle.ts 引入:
+import { FormsModule } from '@angular/forms'</p> <p>@NgModule({
+...
+imports: [
+BrowserModule,
+FormsModule    // 在这里声明
+],
+...
+})</p> <div class="language- extra-class"><pre class="language-text"><code>// ts
+public keyword:string
+
+//html
+&lt;input type=&quot;text&quot; [(ngModel)]=&quot;keyword&quot;&gt;
+&lt;p&gt;{{ keyword }}&lt;/p&gt;
+</code></pre></div><h2 id="服务"><a href="#服务" class="header-anchor">#</a> 服务</h2> <p>组件与组件,没办法调用彼此的方法, 此时需要把方法放到 服务里面, 才能让不同组件调用,</p> <p>组件使用服务时, 需要先引入该服务</p> <p>注意,服务里面没法调用组件里的方法</p> <p>服务与服务之前是可以互调方法</p> <p>组件与组件 可以传值</p> <p>1, 创建服务</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;ng g service my-new-service         // 不带目录
+&gt;ng g service services/storage       // 在services目录下创建服务
+</code></pre></div><p>2, 根模块里引入,并配置</p> <div class="language- extra-class"><pre class="language-text"><code>import { StorageService } from './services/storage.service'
+
+@NgModule({
+  ...
+  providers: [
+    StorageService
+  ],
+  ...
+})
+
+</code></pre></div><p>3, 组件里使用</p> <div class="language- extra-class"><pre class="language-text"><code>// 1 引入服务
+import { StorageService } from '../../services/storage.service'
+
+@Component({
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.less']
+})
+export class FormComponent implements OnInit {
+  
+  //在构造函数这里     你起的名字  上面引入的服务[]
+  constructor(public storage: StorageService) { 
+   let s =  this.storage.get()
+   console.log(s)
+  }
+}
+
+</code></pre></div><h2 id="操作dom-和-动画"><a href="#操作dom-和-动画" class="header-anchor">#</a> 操作DOM 和 动画</h2> <p>注意, 需要在视图加载完成以后, 才能获取到dom
+建议在 ngAfterViewInit  勾子里进行</p> <div class="language- extra-class"><pre class="language-text"><code>...
+  //须先引入
+  ngAfterViewInit() {
+    // 建议把DOM操作放在这个里面
+  }
+...
+</code></pre></div><p>使用VeiwChild 获取节点,</p> <p>当然也是获取一个angular组件实例, 需要先给 组件起名  #开头</p> <div class="language- extra-class"><pre class="language-text"><code>// html 注意,这里是 用 #myBox   要用 # 开头
+&lt;div #myBox&gt;
+   我是一个dom 节点
+&lt;/div&gt;
+
+// ts
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+@Component({
+  selector: 'app-news',
+  templateUrl: './news.component.html',
+  styleUrls: ['./news.component.less']
+})
+export class NewsComponent implements OnInit {
+
+  @ViewChild('myBox') myBox: any
+  @ViewChild('名子')  变量/属性: any    如果变量为 header
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  ngAfterViewInit(): void {
+    console.log(this.myBox)
+    this.myBox.nativeElement.sytle.width = '100px'
+
+    // 调用子组件里面的方法
+    this.header.run()
+  }
+
+}
+
+
+</code></pre></div><h2 id="组件间通讯"><a href="#组件间通讯" class="header-anchor">#</a> 组件间通讯</h2> <p><strong>父组件给子组件传值</strong>
+1 子组件可以获取父组件的数据,  方法也可以传, 注意传方法时不要执行, 即方法名不加()号
+2 子组件可以执行父组件的方法</p> <p>可以在父组件 传个 this  等于整个父组件都传进去</p> <div class="language- extra-class"><pre class="language-text"><code>//父组件调用 子组件的时候传入数据, [msg]是子组件的接上名字,  &quot;msg&quot; 父组件的属性名字 
+//      自定义属性
+&lt;app-son [msg]=&quot;msg&quot; [run]=&quot;run&quot;&gt;&lt;/app-son&gt;
+
+//在子组件引入Input 模块
+//在类里引入
+import { Component, OnInit, Input } from '@angular/core';
+ ...
+ @Input() msg: string
+ @Input() run: any
+
+ getParentRun() {
+   this.run()
+ }
+ ...
+
+// 在子组件html使用
+&lt;p&gt;{{msg}}&lt;/p&gt;
+</code></pre></div><p><strong>子组件给父组件传值</strong>
+1 父组件可以获取子组件的数据
+2 父组件可以获取子组件的方法</p> <div class="language- extra-class"><pre class="language-text"><code>//给子组件起名字
+&lt;app-header #header &gt;&lt;/app-header&gt;
+
+//父组件通过 ViewChild 引用子组件
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+...
+  // 子组件赋值给  header 属性,  可以通过 this.header 使用子组件
+  @ViewChild('header') header: any
+
+  getSonMsg() {
+    alert(this.header.sonMsg)
+  }
+
+  getSonRun() {
+    this.header.sonRun()
+  }
+
+...
+</code></pre></div><p>子组件通过 @Output 触发父组件的方法
+1, 子组件引入Output  和 EventEmitter
+2, 子组件中实例化 EventEmitter</p> <div class="language- extra-class"><pre class="language-text"><code>import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core'
+
+@output() private outer = new EventEmitter&lt;string&gt;()
+
+sedParent() {
+  this.outer.emit('msg from child)
+}
+</code></pre></div><p>3 父组件调用子组件的时候, 定义接收事件, outer就是子组件的EventEmitter 对象 outer</p> <div class="language- extra-class"><pre class="language-text"><code>// 在父组件里html
+        //必须要上面的outer保持一致
+&lt;app-son (outer)=&quot;runParent()&quot;&gt;
+</code></pre></div><p><strong>非父子组件</strong>
+1 组件之间传值
+2 共亨方法</p> <h2 id="angular-生命周期函数"><a href="#angular-生命周期函数" class="header-anchor">#</a> angular 生命周期函数</h2> <p>生命周期函 通俗讲就是组件创建,组件更新, 组件销毁的时候会触发的一系列方法</p> <p>当 angular使用构造函数新建一个组件或指令后, 就会按下面的顺序在特定时刻调用这些生命周期钩子方法</p> <p>以下这四个比较重要,常用</p> <ul><li>constructor  构造函数,非生命周期</li> <li>ngOninit()</li> <li>ngAfterViewInit()</li> <li>ngOnDestroy()</li></ul> <h2 id="rxjs-异步数据流"><a href="#rxjs-异步数据流" class="header-anchor">#</a> Rxjs 异步数据流</h2> <p>可以用同步编程的方式处理异步数据,和promise相似,但功能更强大</p> <p>最常用是Observable 和 fromeEvent</p> <div class="language- extra-class"><pre class="language-text"><code>import { Observable }from 'rxjs'
+
+let stream = new Observable(observer =&gt; {
+  setTimeout(()=&gt;{
+    observer.next('observable timeout')
+  }, 2000)
+})
+
+stream.subscribe(value =&gt; console.log(value))
+
+//在服务写的
+import { Observable }from 'rxjs'
+
+//类里
+...
+  getRxjsData() {
+    return new Obserable(observer=&gt;{
+      setTimeout(()=&gt;{
+        var username='yycu'
+        observer.next(username)  //成功
+        // observer.error(username)  失败
+      }, 3000)
+    })
+  }
+...
+
+//使用服务的组件里使用 
+
+  getData() {
+    var rxjsData = this.request.getRxjsData()
+
+    rxjsData.subscribe((data)=&gt;{
+      console.log(data)
+    })
+
+    // 过一秒以后撤回刚才的操作, promise无法这样做
+    var d = rxjsData.subscribe(data=&gt;{
+
+    })
+
+    setTimeout(()=&gt;{
+      d.unsubscribe()  //取消订阅 
+    }, 1000)
+  }
+
+</code></pre></div><h2 id="请求数据模块-httpclientmodule"><a href="#请求数据模块-httpclientmodule" class="header-anchor">#</a> 请求数据模块 HttpClientModule</h2> <h5 id="get"><a href="#get" class="header-anchor">#</a> get</h5> <p>1 在 app.module.ts 中引入 HttpClientModule</p> <div class="language- extra-class"><pre class="language-text"><code>import { HttpClientModule } from '@angular/common/http'
+
+imports: [
+  BrowserModule,
+  HttpClientModule
+]
+</code></pre></div><p>2 在组件中使用,</p> <div class="language- extra-class"><pre class="language-text"><code>// 当做一个服务 
+import { HttpClient } from '@angular/common/http'
+
+...
+
+  constructor(public http:HttpClient) {
+
+  }
+
+  getData() {
+
+    let api='xxxxxxxx'
+
+    this.http.get(api).subscribe((response)=&gt; {
+      console.log(response)
+    })
+  }
+...
+
+</code></pre></div><h4 id="post"><a href="#post" class="header-anchor">#</a> post</h4> <p>1 在app.module.ts 中引入 HttpClientModule 并注入</p> <div class="language- extra-class"><pre class="language-text"><code>import { HttpClientModule } from '@angular/common/http'
+
+</code></pre></div><p>2 在用到的地方引入 HttpClient  HttpHeaders 并在构造函数声明 HttpClient</p> <div class="language- extra-class"><pre class="language-text"><code>import { HttpClient, HttpHeaders } from 'angular/common/http'
+
+...
+constructor(public http:HttpClient){
+
+}
+
+getData() {
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  }
+  var api = 'xxxx'
+  this.http.post(api, {username: 'yycu'}, httpOptions).subscribe(response=&gt;{
+    console.log(response)
+  })
+}
+...
+</code></pre></div><h4 id="jsonp"><a href="#jsonp" class="header-anchor">#</a> jsonp</h4> <p>1 在app.module.ts 中引入 HttpClientModule HttpClientJsonpModule 并注入</p> <div class="language- extra-class"><pre class="language-text"><code>import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http'
+
+imports [
+  BrowserModule,
+  HttpClientModule,
+  HttpClientJsonpModule
+]
+
+</code></pre></div><p>2 在组件中引入</p> <div class="language- extra-class"><pre class="language-text"><code>//jsonp 请求,  服务器必须支持
+import { HttpClient } from 'angular/common/http'
+
+...
+constructor(public http:HttpClient){
+
+}
+
+getData() {
+  
+  let api = 'xxxx'
+  this.http.jsonp(api, 'callback/cb').subscribe((response)=&gt;{
+    console.log(response)
+  })
+}
+</code></pre></div><h2 id="使用第三方请求数据方法"><a href="#使用第三方请求数据方法" class="header-anchor">#</a> 使用第三方请求数据方法</h2> <p>1 安装</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; npm i -S axios
+</code></pre></div><p>2 引入  (在服务, 封装成服务)</p> <div class="language- extra-class"><pre class="language-text"><code>// 在服务引入
+import { Injectable } from '@angular/core';
+import { axios } from 'axios';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HttpserviceService {
+  constructor() {}
+
+  axiosGet() {
+
+  }
+}
+
+</code></pre></div><p>使用就像 服务那样用就可以了</p> <h2 id="路由"><a href="#路由" class="header-anchor">#</a> 路由</h2> <p>创建项目选择,添加上路由</p> <p>app目录下就多了下个 app-routing.module.ts,路由在此文件配置</p> <p>app模版下有, 个 <code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code> 相当于router-view</p> <div class="language- extra-class"><pre class="language-text"><code>
+import { HomeComponent } from './components/home/home.component';
+import { ProductComponent } from './components/product/product.component';
+import { NewsComponent } from './components/news/news.component';
+
+
+const routes: Routes = [
+  {
+    path: 'home', component: HomeComponent,
+  },
+  {
+    path: 'news', component: NewsComponent,
+  },
+  {
+    path: 'product', component: ProductComponent,
+  }
+  
+];
+
+
+</code></pre></div><p>在app 模板</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;header&gt;
+  &lt;a routerLink=&quot;/home&quot; routerLinkActive=&quot;active&quot;&gt;home&lt;/a&gt;
+  &lt;a routerLink=&quot;/news&quot; routerLinkActive=&quot;active&quot;&gt;news&lt;/a&gt;
+  &lt;a routerLink=&quot;/product&quot; routerLinkActive=&quot;active&quot;&gt;product&lt;/a&gt;
+&lt;/header&gt;
+&lt;router-outlet&gt;&lt;/router-outlet&gt;
+</code></pre></div><p>当前路由 会有一个 active 类名</p> <h2 id="querystring-路由"><a href="#querystring-路由" class="header-anchor">#</a> querystring 路由</h2> <div class="language- extra-class"><pre class="language-text"><code>//html
+&lt;a [routerLink]=&quot;['/newscontent']&quot; [queryParams]=&quot;{aid:key}&quot;&gt;{{key}} -- {{item}}&lt;/a&gt;
+
+// 在渲染的页面 获取 
+import { Component, OnInit } from '@angular/core';
+
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-newscontent',
+  templateUrl: './newscontent.component.html',
+  styleUrls: ['./newscontent.component.less']
+})
+export class NewscontentComponent implements OnInit {
+
+  constructor(public route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((data)=&gt;{
+      console.log(data)
+    })
+  }
+
+}
+
+</code></pre></div><h2 id="路由-params-参数"><a href="#路由-params-参数" class="header-anchor">#</a> 路由 params 参数</h2> <div class="language- extra-class"><pre class="language-text"><code>// 路由配置
+path: 'newscontent/:aid', component: NewscontentComponent,
+
+//html
+  &lt;li *ngFor=&quot;let item of list; let key = index&quot;&gt;
+   
+    &lt;a [routerLink]=&quot;['/newscontent', key]&quot;&gt;{{key}} -- {{item}}&lt;/a&gt;
+  &lt;/li&gt;
+
+// 组件里 获取
+// 在渲染的页面 获取 
+import { Component, OnInit } from '@angular/core';
+
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-newscontent',
+  templateUrl: './newscontent.component.html',
+  styleUrls: ['./newscontent.component.less']
+})
+export class NewscontentComponent implements OnInit {
+
+  constructor(public route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.route.params.subscribe((data)=&gt;{
+      console.log(data)
+    })
+  }
+
+}
+
+</code></pre></div><h2 id="js-导航"><a href="#js-导航" class="header-anchor">#</a> js 导航</h2> <div class="language- extra-class"><pre class="language-text"><code>import { Component, OnInit } from '@angular/core';
+import { Router的, NavigationExtras } from '@angular/router'
+
+@Component({
+  selector: 'app-product',
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.less']
+})
+export class ProductComponent implements OnInit {
+
+  constructor(public router: Router) { }
+
+  ngOnInit(): void {
+  }
+
+  goProductContent() {
+                        //  params 参数写在 [] 里 第二个元素
+    this.router.navigate(['/newscontent','2222'], )
+
+                        // get 参数,  第二个参数
+    let queryParams: NavigationExtras = {
+      queryParams: {'aid': 123}
+    }
+
+    this.router.navigate(['/newscontent'], queryParams)
+  }
+}
+</code></pre></div><h2 id="嵌套路由"><a href="#嵌套路由" class="header-anchor">#</a> 嵌套路由</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/framework/Angular/" class="prev router-link-active">
+        angular
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f104056c.js" defer></script><script src="/assets/js/2.f067c4ab.js" defer></script><script src="/assets/js/19.36f43c9f.js" defer></script>
+  </body>
+</html>
