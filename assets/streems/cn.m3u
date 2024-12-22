@@ -8,7 +8,7 @@ https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
 #EXTINF:-1 tvg-id="CCTV1.cn",CCTV-1综合 (576p)
 http://42.176.185.28:9901/tsfile/live/1022_1.m3u8
 #EXTINF:-1 tvg-id="CCTV2.cn",CCTV-2财经 (1080p)
-https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
+https://ldocctvwbcdtxy.liveplay.myqcloud.com/ldocctvwbcd/cdrmldcctv2_1_td.m3u8
 #EXTINF:-1 tvg-id="CCTV4America.cn",CCTV-4 America (1080p)
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 tvg-id="CCTV4Asia.cn",CCTV-4 Asia (480p)
